@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('students', function (Blueprint $table) {
+        Schema::create('teachers', function (Blueprint $table) {
             $table->id(); 
             $table->string('name');
-            $table->integer('age');
+            $table->integer('subject');
+             $table->timestamps();
            // Add timestamps for created_at and updated_at
         });
     }
